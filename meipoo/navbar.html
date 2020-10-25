@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee+Shade">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Diplomata">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/css/theme.bootstrap_4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <style>
+        .dropdown-menu li:hover .sub-menu{visibility: visible;}
+        .dropdown:hover .dropdown-menu {display: block;}
+    </style>
+    <style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+  font-size: 40px;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #fff;
+  color: black;
+  padding: 10px 15px;
+  width: 200px;
+  border: solid;
+  border-radius:10px;
+  border-width: thin;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+
+</head>
+
+<body style="background: rgb(255,255,255);">
+    <nav class="navbar navbar-light navbar-expand bg-light navigation-clean">
+      <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="#">社會處</a>
+          <a href="#">民政處</a>
+          <a href="#">財政處</a>
+          <a href="#">產業發展處</a>
+          <a href="#">工務處</a>
+          <a href="#">交通處</a>
+          <a href="#">都市發展處</a>
+          <a href="#">地政處</a>
+          <a href="#">勞工處</a>
+          <a href="#">城市行銷處</a>
+          <a href="#">行政處</a>
+          <a href="#">人事處</a>
+          <a href="#">主計處</a>
+          <a href="#">政風處</a>
+          <a href="#">勞工處</a>
+          </div>
+
+        <div id="main">
+          <button class="openbtn" onclick="openNav()">☰各部門文章列表</button>
+        </div>
+
+        <div class="container-fluid"><a class="navbar-brand d-xl-flex justify-content-xl-start align-items-xl-center" href="index.html" style="font-size: 25px;padding: 0px;"><i class="fas fa-wind"></i>&nbsp;MEIPU</a>
+            <div class="row d-lg-flex align-items-lg-center">
+                <div class="col d-lg-flex" style="padding-right: 15px;padding-left: 100px;">
+                    <div class="d-lg-flex"><a data-bs-hover-animate="tada" href="index.html" style="color: rgb(0,0,0);font-family: Alef, sans-serif;font-size: 30px;">新竹市民意分析平台</a></div>
+                </div>
+            </div><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"></button>
+            <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item d-lg-flex justify-content-lg-center align-items-lg-center middle" style="font-size: 25px;  margin-right: 0;width: 180px;height: 40px;text-align: center;"><a class="nav-link active d-md-flex justify-content-md-center" data-bs-hover-animate="pulse" href="hot.html">熱門話題</a></li>
+                    <li class="nav-item d-lg-flex justify-content-lg-center align-items-lg-center middle" style="font-size: 25px;  margin-right: 0;width: 180px;height: 40px;text-align: center;" data-bs-hover-animate="pulse" href="covid.html">疫情專區</a></li>
+                    <li class="nav-item d-lg-flex justify-content-lg-center align-items-lg-center middle" style="font-size: 25px;  margin-right: 0;width: 180px;height: 40px;text-align: center;" data-bs-hover-animate="pulse" href="stastics.html">政策滿意度</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-filter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-storage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+    <script src="https://use.fontawesome.com/31cba9b02f.js"></script>
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+
+        }
+
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+
+</body>
+
+</html>
